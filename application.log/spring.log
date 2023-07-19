@@ -1,0 +1,71 @@
+2023-07-17 16:52:32.430  INFO 3960 --- [main] c.e.library.AppNewsSiteApplication       : Starting AppNewsSiteApplication using Java 19.0.2 on Sirojiddin with PID 3960 (D:\my_bot\udemy\lib\target\classes started by IIISI in D:\my_bot\udemy\lib)
+2023-07-17 16:52:32.432  INFO 3960 --- [main] c.e.library.AppNewsSiteApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-07-17 16:52:32.796  INFO 3960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17 16:52:32.842  INFO 3960 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 41 ms. Found 5 JPA repository interfaces.
+2023-07-17 16:52:33.310  INFO 3960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17 16:52:33.376  INFO 3960 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 918 ms
+2023-07-17 16:52:33.516  INFO 3960 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17 16:52:33.542  INFO 3960 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-07-17 16:52:33.635  INFO 3960 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-17 16:52:33.688  INFO 3960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17 16:52:33.787  INFO 3960 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17 16:52:33.803  INFO 3960 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-17 16:52:34.240  INFO 3960 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17 16:52:34.245  INFO 3960 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17 16:52:34.555  INFO 3960 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17 16:52:34.584  INFO 3960 --- [main] c.e.library.AppNewsSiteApplication       : Started AppNewsSiteApplication in 2.413 seconds (JVM running for 2.84)
+2023-07-17 16:52:34.617  INFO 3960 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17 16:52:34.618  INFO 3960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17 16:52:34.620  INFO 3960 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17 16:52:37.444  INFO 16632 --- [main] c.e.library.AppNewsSiteApplication       : Starting AppNewsSiteApplication using Java 19.0.2 on Sirojiddin with PID 16632 (D:\my_bot\udemy\lib\target\classes started by IIISI in D:\my_bot\udemy\lib)
+2023-07-17 16:52:37.446  INFO 16632 --- [main] c.e.library.AppNewsSiteApplication       : No active profile set, falling back to 1 default profile: "default"
+2023-07-17 16:52:37.834  INFO 16632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17 16:52:37.873  INFO 16632 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
+2023-07-17 16:52:38.305  INFO 16632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8080 (http)
+2023-07-17 16:52:38.311  INFO 16632 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-07-17 16:52:38.312  INFO 16632 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-07-17 16:52:38.369  INFO 16632 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-07-17 16:52:38.369  INFO 16632 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 896 ms
+2023-07-17 16:52:38.499  INFO 16632 --- [main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17 16:52:38.526  INFO 16632 --- [main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-07-17 16:52:38.616  INFO 16632 --- [main] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-17 16:52:38.669  INFO 16632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-07-17 16:52:38.765  INFO 16632 --- [main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-07-17 16:52:38.782  INFO 16632 --- [main] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-17 16:52:39.195  INFO 16632 --- [main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17 16:52:39.202  INFO 16632 --- [main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17 16:52:39.504  INFO 16632 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17 16:52:39.531  INFO 16632 --- [main] c.e.library.AppNewsSiteApplication       : Started AppNewsSiteApplication in 2.369 seconds (JVM running for 3.042)
+2023-07-17 16:53:37.286  INFO 16632 --- [SpringApplicationShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17 16:53:37.286  INFO 16632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2023-07-17 16:53:37.288  INFO 16632 --- [SpringApplicationShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2023-07-17 16:53:38,992 INFO  StartupInfoLogger:55 - [] Starting AppNewsSiteApplication using Java 19.0.2 on Sirojiddin with PID 16396 (D:\my_bot\udemy\lib\target\classes started by IIISI in D:\my_bot\udemy\lib)
+2023-07-17 16:53:38,994 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2023-07-17 16:53:39,323 INFO  RepositoryConfigurationDelegate:132 - [] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-07-17 16:53:39,358 INFO  RepositoryConfigurationDelegate:201 - [] Finished Spring Data repository scanning in 31 ms. Found 5 JPA repository interfaces.
+2023-07-17 16:53:39,793 INFO  TomcatWebServer:108 - [] Tomcat initialized with port(s): 8080 (http)
+2023-07-17 16:53:39,798 INFO  DirectJDKLog:173 - [] Starting service [Tomcat]
+2023-07-17 16:53:39,799 INFO  DirectJDKLog:173 - [] Starting Servlet engine: [Apache Tomcat/9.0.63]
+2023-07-17 16:53:39,852 INFO  DirectJDKLog:173 - [] Initializing Spring embedded WebApplicationContext
+2023-07-17 16:53:39,852 INFO  ServletWebServerApplicationContext:292 - [] Root WebApplicationContext: initialization completed in 830 ms
+2023-07-17 16:53:39,975 INFO  LogHelper:31 - [] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-07-17 16:53:39,998 INFO  Version:44 - [] HHH000412: Hibernate ORM core version 5.6.9.Final
+2023-07-17 16:53:40,088 INFO  JavaReflectionManager:56 - [] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-07-17 16:53:40,132 INFO  HikariDataSource:110 - [] HikariPool-1 - Starting...
+2023-07-17 16:53:40,228 INFO  HikariDataSource:123 - [] HikariPool-1 - Start completed.
+2023-07-17 16:53:40,243 INFO  Dialect:175 - [] HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL10Dialect
+2023-07-17 16:53:40,650 INFO  JtaPlatformInitiator:52 - [] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-07-17 16:53:40,654 INFO  AbstractEntityManagerFactoryBean:437 - [] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17 16:53:40,931 INFO  TomcatWebServer:220 - [] Tomcat started on port(s): 8080 (http) with context path ''
+2023-07-17 16:53:40,955 INFO  StartupInfoLogger:61 - [] Started AppNewsSiteApplication in 2.185 seconds (JVM running for 2.518)
+2023-07-17 16:53:47,025 INFO  DirectJDKLog:173 - [] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-07-17 16:53:47,025 INFO  FrameworkServlet:525 - [] Initializing Servlet 'dispatcherServlet'
+2023-07-17 16:53:47,174 INFO  FrameworkServlet:547 - [] Completed initialization in 149 ms
+2023-07-17 16:53:47,236 INFO  DefaultSecurityFilterChain:55 - [] Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@b7d259a, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@8715290, org.springframework.security.web.context.SecurityContextPersistenceFilter@4df1c7d1, org.springframework.security.web.header.HeaderWriterFilter@1c60704, org.springframework.security.web.authentication.logout.LogoutFilter@3475e7f0, com.example.library.security.JwtFilter@6f5d0190, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@73963089, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@20f626e3, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@48bed3fd, org.springframework.security.web.session.SessionManagementFilter@277f9786, org.springframework.security.web.access.ExceptionTranslationFilter@5dbaa299, org.springframework.security.web.access.intercept.AuthorizationFilter@3b47090c]
+2023-07-17 16:53:47,300 INFO  AuthController:31 - [] [getMessage] info message
+2023-07-17 16:53:47,300 WARN  AuthController:32 - [] [getMessage] warn message
+2023-07-17 16:53:47,300 ERROR AuthController:33 - [] [getMessage] error message
+2023-07-17 16:53:47,300 DEBUG AuthController:34 - [] [getMessage] debug message
+2023-07-17 16:55:12,419 INFO  AbstractEntityManagerFactoryBean:651 - [] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-07-17 16:55:12,420 INFO  HikariDataSource:350 - [] HikariPool-1 - Shutdown initiated...
+2023-07-17 16:55:12,422 INFO  HikariDataSource:352 - [] HikariPool-1 - Shutdown completed.

@@ -1,0 +1,16 @@
+2023-07-17 18:05:01,134 INFO  Loggerr:12 - [] [getMessage] info message
+2023-07-17 18:05:01,135 WARN  Loggerr:13 - [] [getMessage] warn message
+2023-07-17 18:05:01,135 ERROR Loggerr:14 - [] [getMessage] error message
+2023-07-17 18:05:01,135 DEBUG Loggerr:15 - [] [getMessage] debug message
+2023-07-17 18:07:09,405 INFO  Loggerr:12 - [] [getMessage] info message
+2023-07-17 18:07:09,405 WARN  Loggerr:13 - [] [getMessage] warn message
+2023-07-17 18:07:09,406 ERROR Loggerr:14 - [] [getMessage] error message
+2023-07-17 18:07:09,406 DEBUG Loggerr:15 - [] [getMessage] debug message
+2023-07-17 18:07:35,787 INFO  Loggerr:12 - [] [getMessage] info message
+2023-07-17 18:07:35,787 WARN  Loggerr:13 - [] [getMessage] warn message
+2023-07-17 18:07:35,787 ERROR Loggerr:14 - [] [getMessage] error message
+2023-07-17 18:07:35,787 DEBUG Loggerr:15 - [] [getMessage] debug message
+2023-07-17 18:07:46,054 INFO  Loggerr:12 - [] [getMessage] info message
+2023-07-17 18:07:46,054 WARN  Loggerr:13 - [] [getMessage] warn message
+2023-07-17 18:07:46,054 ERROR Loggerr:14 - [] [getMessage] error message
+2023-07-17 18:07:46,054 DEBUG Loggerr:15 - [] [getMessage] debug message
