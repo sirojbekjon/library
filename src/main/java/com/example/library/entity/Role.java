@@ -3,6 +3,7 @@ package com.example.library.entity;
 
 import com.example.library.entity.enums.Permission;
 import com.example.library.entity.template.AbstractEntity;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

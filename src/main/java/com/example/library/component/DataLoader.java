@@ -1,39 +1,38 @@
 package com.example.library.component;
-
 import com.example.library.entity.Role;
 import com.example.library.entity.User;
 import com.example.library.entity.enums.Permission;
 import com.example.library.repository.RoleRepository;
 import com.example.library.repository.UserRepository;
 import com.example.library.utils.RoleConstants;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.boot.CommandLineRunner;
+import org.springframework.boot.ApplicationArguments;
+import org.springframework.boot.ApplicationRunner;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Component;
-
 import java.util.Arrays;
 
 import static com.example.library.entity.enums.Permission.*;
 
 @Component
-@RequiredArgsConstructor
-public class DataLoader implements CommandLineRunner {
+public class DataLoader implements ApplicationRunner {
 
-    private final
+    @Autowired
     RoleRepository roleRepository;
-    private final 
+    @Autowired
     UserRepository userRepository;
-    private final
+    @Autowired
     PasswordEncoder passwordEncoder;
 
     @Value("${spring.datasource.initalization-mode}")
-    public String initializate;
+    private String initialModeType;
+
+
 
     @Override
-    public void run(String... args){
-        if (initializate.equals("always")){
+    public void run(ApplicationArguments args) throws Exception {
+        if (initialModeType.equals("always")){
             Permission[] permessions = Permission.values();
 
             Role superAdmin = roleRepository.save(new Role(
@@ -44,18 +43,21 @@ public class DataLoader implements CommandLineRunner {
             Role admin = roleRepository.save(new Role(
                     RoleConstants.ADMIN,
                     "Admin uchun bazi bir imkoniyatlar cheklangan",
-                    Arrays.asList(ADD_USER,VIEW_USER,ADD_BOOK,EDIT_BOOK,VIEW_BOOK)
+                    Arrays.asList(ADD_USER,VIEW_USER,ADD_DOC)
             ));
             Role user = roleRepository.save(new Role(
                     RoleConstants.USER,
-                    "foydalanuvchi uchun cheklangan imkoniyatlar",
-                    Arrays.asList(VIEW_BOOK)
+                    "User uchun bazi bir imkoniyatlar cheklangan",
+                    Arrays.asList(
+                            ADD_DOC,
+                            VIEW_DOC,
+                            DELETE_DOC,
+                            EDIT_DOC)
             ));
-
             userRepository.save(new User(
                     "superAdmin",
                     "superAdmin",
-                    "superAdmin@gmail.com",
+                    "5361",
                     passwordEncoder.encode("superAdmin"),
                     superAdmin
             ));
@@ -63,12 +65,11 @@ public class DataLoader implements CommandLineRunner {
             userRepository.save(new User(
                     "admin",
                     "admin",
-                    "admin@gmail.com",
+                    "5362",
                     passwordEncoder.encode("admin"),
                     admin
             ));
         }
-
     }
 }
 

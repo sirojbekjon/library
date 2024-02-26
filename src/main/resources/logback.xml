@@ -17,7 +17,6 @@
                 %date{ISO8601} %-5level %class{0}:%L - [%X] %msg%n
             </Pattern>
         </encoder>
-
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             roll over daily
             <fileNamePattern>${FOLDER_NAME}/archived/debug.%d{yyyy-MM-dd}.%i.log

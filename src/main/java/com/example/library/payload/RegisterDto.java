@@ -15,16 +15,16 @@ public class RegisterDto {
     @NotNull(message = "name  bo'sh bo'lmasin")
     private String name;
 
-    @NotNull(message = "sureName  bo'sh bo'lmasin")
+    @NotNull(message = "username  bo'sh bo'lmasin")
     private String username;
 
-    @NotNull(message = "email  bo'sh bo'lmasin")
-    private String email;
+    @NotNull(message = "telefon nomer  bo'sh bo'lmasin")
+    private String phone;
+
+    private Long managment;
+
+    private Long department;
 
     @NotNull(message = "parol  bo'sh bo'lmasin")
     private String password;
-
-    @NotNull(message = "parol takrori bo'sh bo'lmasin")
-    private String prePassword;
-
 }

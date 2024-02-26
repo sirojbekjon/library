@@ -1,0 +1,116 @@
+2024-02-16 10:40:14,339 INFO  StartupInfoLogger:55 - [] Starting AppNewsSiteApplication using Java 19.0.2 on Sirojiddin with PID 13176 (D:\my_bot\udemy\lib\target\classes started by IIISI in D:\my_bot\udemy\lib)
+2024-02-16 10:40:14,340 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.0, Spring v5.3.20
+2024-02-16 10:40:14,341 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2024-02-16 10:40:15,263 DEBUG GenericFilterBean:242 - [] Filter 'jwtFilter' configured for use
+2024-02-16 10:40:16,291 ERROR LoggingFailureAnalysisReporter:40 - [] 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2024-02-16 10:40:48,833 INFO  StartupInfoLogger:55 - [] Starting AppNewsSiteApplication using Java 19.0.2 on Sirojiddin with PID 11600 (D:\my_bot\udemy\lib\target\classes started by IIISI in D:\my_bot\udemy\lib)
+2024-02-16 10:40:48,835 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.0, Spring v5.3.20
+2024-02-16 10:40:48,835 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2024-02-16 10:40:49,748 DEBUG GenericFilterBean:242 - [] Filter 'jwtFilter' configured for use
+2024-02-16 10:40:50,820 INFO  StartupInfoLogger:61 - [] Started AppNewsSiteApplication in 2.191 seconds (JVM running for 2.598)
+2024-02-16 10:53:42,168 INFO  StartupInfoLogger:55 - [] Starting AppNewsSiteApplication using Java 19.0.2 on Sirojiddin with PID 16504 (D:\my_bot\udemy\lib\target\classes started by IIISI in D:\my_bot\udemy\lib)
+2024-02-16 10:53:42,170 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.0, Spring v5.3.20
+2024-02-16 10:53:42,171 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2024-02-16 10:53:43,325 DEBUG GenericFilterBean:242 - [] Filter 'jwtFilter' configured for use
+2024-02-16 10:53:44,556 ERROR SpringApplication:824 - [] Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'userRepository' defined in com.example.library.repository.UserRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean com.example.library.repository.UserRepository.existsByEmail(java.lang.String)! Reason: Failed to create query for method public abstract boolean com.example.library.repository.UserRepository.existsByEmail(java.lang.String)! No property 'email' found for type 'User'!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.example.library.repository.UserRepository.existsByEmail(java.lang.String)! No property 'email' found for type 'User'!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:934)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:918)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295)
+	at com.example.library.AppNewsSiteApplication.main(AppNewsSiteApplication.java:9)
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract boolean com.example.library.repository.UserRepository.existsByEmail(java.lang.String)! Reason: Failed to create query for method public abstract boolean com.example.library.repository.UserRepository.existsByEmail(java.lang.String)! No property 'email' found for type 'User'!; nested exception is java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.example.library.repository.UserRepository.existsByEmail(java.lang.String)! No property 'email' found for type 'User'!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:106)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:94)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1921)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:96)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:86)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:86)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:364)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:322)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:230)
+	at org.springframework.data.util.Lazy.get(Lazy.java:114)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:328)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 16 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Failed to create query for method public abstract boolean com.example.library.repository.UserRepository.existsByEmail(java.lang.String)! No property 'email' found for type 'User'!
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:113)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:254)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:87)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:102)
+	... 38 common frames omitted
+Caused by: org.springframework.data.mapping.PropertyReferenceException: No property 'email' found for type 'User'!
+	at org.springframework.data.mapping.PropertyPath.<init>(PropertyPath.java:90)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:437)
+	at org.springframework.data.mapping.PropertyPath.create(PropertyPath.java:413)
+	at org.springframework.data.mapping.PropertyPath.lambda$from$0(PropertyPath.java:366)
+	at java.base/java.util.concurrent.ConcurrentMap.computeIfAbsent(ConcurrentMap.java:330)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:348)
+	at org.springframework.data.mapping.PropertyPath.from(PropertyPath.java:331)
+	at org.springframework.data.repository.query.parser.Part.<init>(Part.java:81)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.lambda$new$0(PartTree.java:249)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$OrPart.<init>(PartTree.java:250)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.lambda$new$0(PartTree.java:383)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.stream.ReferencePipeline$2$1.accept(ReferencePipeline.java:179)
+	at java.base/java.util.Spliterators$ArraySpliterator.forEachRemaining(Spliterators.java:1006)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.query.parser.PartTree$Predicate.<init>(PartTree.java:384)
+	at org.springframework.data.repository.query.parser.PartTree.<init>(PartTree.java:95)
+	at org.springframework.data.jpa.repository.query.PartTreeJpaQuery.<init>(PartTreeJpaQuery.java:89)
+	... 42 common frames omitted
+2024-02-16 11:00:30,058 INFO  StartupInfoLogger:55 - [] Starting AppNewsSiteApplication using Java 19.0.2 on Sirojiddin with PID 2096 (D:\my_bot\udemy\lib\target\classes started by IIISI in D:\my_bot\udemy\lib)
+2024-02-16 11:00:30,060 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.0, Spring v5.3.20
+2024-02-16 11:00:30,061 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2024-02-16 11:00:31,226 DEBUG GenericFilterBean:242 - [] Filter 'jwtFilter' configured for use
+2024-02-16 11:00:32,518 INFO  StartupInfoLogger:61 - [] Started AppNewsSiteApplication in 2.727 seconds (JVM running for 3.248)

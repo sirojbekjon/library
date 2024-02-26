@@ -1,0 +1,5 @@
+2024-02-26 08:49:17,125 INFO  StartupInfoLogger:55 - [] Starting AppNewsSiteApplication using Java 19.0.2 on Sirojiddin with PID 12328 (D:\my_bot\udemy\lib\target\classes started by IIISI in D:\my_bot\udemy\lib)
+2024-02-26 08:49:17,129 DEBUG StartupInfoLogger:56 - [] Running with Spring Boot v2.7.0, Spring v5.3.20
+2024-02-26 08:49:17,130 INFO  SpringApplication:634 - [] No active profile set, falling back to 1 default profile: "default"
+2024-02-26 08:49:19,543 DEBUG GenericFilterBean:242 - [] Filter 'jwtFilter' configured for use
+2024-02-26 08:49:22,100 INFO  StartupInfoLogger:61 - [] Started AppNewsSiteApplication in 5.468 seconds (JVM running for 6.542)

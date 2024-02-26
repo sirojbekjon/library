@@ -1,8 +1,11 @@
 package com.example.library.service;
 
+import com.example.library.entity.Department;
 import com.example.library.entity.User;
 import com.example.library.payload.ApiResponse;
 import com.example.library.payload.UserDto;
+import com.example.library.repository.DepartmentRepository;
+import com.example.library.repository.ManagmentRepository;
 import com.example.library.repository.RoleRepository;
 import com.example.library.repository.UserRepository;
 import com.example.library.security.JwtProvider;
@@ -22,7 +25,8 @@ public class UserService {
   private final PasswordEncoder passwordEncoder;
   private final RoleRepository roleRepository;
   private final JwtProvider jwtProvider;
-
+  private final ManagmentRepository managmentRepository;
+  private final DepartmentRepository departmentRepository;
 
     public ApiResponse deleteUser(Long userId) {
         try {
@@ -40,15 +44,13 @@ public class UserService {
             if (!userDto.getPassword().equals(userDto.getPrePassword())) {
                 return new ApiResponse("parollar mos emas", false);
             }
-            if (userRepository.existsByEmail(userDto.getEmail())) {
-                return new ApiResponse("Bunday email avval ro'yxatdan o'tgan", false);
-            }
             User user = new User(
                     userDto.getName(),
                     userDto.getUsername(),
-                    userDto.getEmail(),
+                    userDto.getPhone(),
                     passwordEncoder.encode(userDto.getPassword()),
-                    roleRepository.findById(userDto.getRole()).get()
+                    managmentRepository.findById(userDto.getManagment()).get(),
+                    departmentRepository.findById(userDto.getDepartment()).get()
             );
             userRepository.save(user);
             String token = jwtProvider.generateToken(userDto.getUsername(), user.getRole());

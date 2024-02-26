@@ -7,19 +7,23 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.util.List;
 
-@AllArgsConstructor
+@Entity
 @NoArgsConstructor
 @Data
-@Entity
-@Table(name = "books_type")
-public class BooksType extends AbstractEntity {
+public class Managment extends AbstractEntity {
 
-    @Column(nullable = false)
     private String name;
 
-
-    @ManyToOne(fetch = FetchType.LAZY)
-    private Library library;
-
+    public Managment(String name) {
+        this.name = name;
+    }
 }
+
+
+
+
+
+
+

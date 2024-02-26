@@ -6,10 +6,10 @@ public enum Permission {
     DELETE_USER,
     VIEW_USER,
 
-    ADD_BOOK,
-    VIEW_BOOK,
-    DELETE_BOOK,
-    EDIT_BOOK,
+    ADD_DOC,
+    VIEW_DOC,
+    DELETE_DOC,
+    EDIT_DOC,
 
     ADD_ROLE,
     DELETE_ROLE,
@@ -19,6 +19,6 @@ public enum Permission {
     ADD_POST,
     DELETE_POST,
     VIEW_POST,
-    EDIT_POST
+    EDIT_POST,
 
 }

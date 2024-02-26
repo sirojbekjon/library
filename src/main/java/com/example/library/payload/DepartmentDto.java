@@ -5,10 +5,8 @@ import lombok.Data;
 
 @Data
 @AllArgsConstructor
-public class UserMe {
+public class DepartmentDto {
 
     private String name;
-    private String username;
-    private String phone;
-    private String role;
+    private Long managment;
 }
